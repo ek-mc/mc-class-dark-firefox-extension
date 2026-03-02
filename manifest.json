@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "MC-Class Dark Theme (Firefox)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Applies a dark theme to mc-class.gr",
   "browser_specific_settings": {
     "gecko": {
