@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.4] - 2026-03-03
+- Added `browser_specific_settings.gecko.data_collection_permissions` to satisfy AMO requirement.
+- Set data collection declaration to `required: ["none"]` and `optional: []`.
+- Bumped extension version to `0.1.4`.
+
 ## [0.1.3] - 2026-03-03
 - Added `LICENSE` file with MIT license.
 - Bumped extension version to `0.1.3`.
