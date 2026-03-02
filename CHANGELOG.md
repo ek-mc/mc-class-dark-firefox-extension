@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.6] - 2026-03-03
+- Raised Firefox desktop minimum version to `140.0` for compatibility with `data_collection_permissions`.
+- Added `browser_specific_settings.gecko_android.strict_min_version: 142.0` to align Android support with data consent requirements.
+- Bumped extension version to `0.1.6`.
+
 ## [0.1.5] - 2026-03-03
 - Renamed add-on display name to avoid restricted trademarks in AMO validation.
 - `name`: `MC-Class Dark Theme (Firefox)` → `MC-Class Dark Theme (Gecko)`.
