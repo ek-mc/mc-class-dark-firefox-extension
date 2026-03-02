@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.5] - 2026-03-03
+- Renamed add-on display name to avoid restricted trademarks in AMO validation.
+- `name`: `MC-Class Dark Theme (Firefox)` → `MC-Class Dark Theme (Gecko)`.
+- Bumped extension version to `0.1.5`.
+
 ## [0.1.4] - 2026-03-03
 - Added `browser_specific_settings.gecko.data_collection_permissions` to satisfy AMO requirement.
 - Set data collection declaration to `required: ["none"]` and `optional: []`.

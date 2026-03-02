@@ -1,4 +1,4 @@
-# MC-Class Dark Theme (Firefox Extension)
+# MC-Class Dark Theme (Gecko Extension)
 
 Firefox extension version of the mc-class.gr dark theme.
 
