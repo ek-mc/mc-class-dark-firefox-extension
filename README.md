@@ -2,6 +2,8 @@
 
 Firefox extension version of the mc-class.gr dark theme.
 
+![MC-Class Dark Theme preview](assets/screenshots/preview.jpg)
+
 ## Install locally (temporary)
 1. Open `about:debugging#/runtime/this-firefox`
 2. Click **Load Temporary Add-on...**
