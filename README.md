@@ -24,3 +24,16 @@ Firefox extension version of the mc-class.gr dark theme.
 
 ## Version
 - 0.1.6
+
+## License
+
+See [LICENSE](LICENSE).
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
+
+## Support
+
+For issues, use [GitHub Issues](https://github.com/ek-mc/mc-class-dark-firefox-extension/issues).
+
