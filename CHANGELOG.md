@@ -1,5 +1,12 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+- Documented GitHub Actions workflows in README.
+
+# Changelog
+
 ## [0.1.6] - 2026-03-03
 - Raised Firefox desktop minimum version to `140.0` for compatibility with `data_collection_permissions`.
 - Added `browser_specific_settings.gecko_android.strict_min_version: 142.0` to align Android support with data consent requirements.
