@@ -37,3 +37,8 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 For issues, use [GitHub Issues](https://github.com/ek-mc/mc-class-dark-firefox-extension/issues).
 
+## Automation
+
+This repository uses GitHub Actions workflows:
+- `ci.yml`
+
