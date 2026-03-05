@@ -1,11 +1,15 @@
 # Changelog
 
+## [Unreleased]
+
 ## [0.1.7] - 2026-03-04
 
 ### Added
 - Documented GitHub Actions workflows in README.
 
 # Changelog
+
+## [Unreleased]
 
 ## [0.1.6] - 2026-03-03
 - Raised Firefox desktop minimum version to `140.0` for compatibility with `data_collection_permissions`.
