@@ -33,6 +33,16 @@ input::placeholder, textarea::placeholder { color:#9aa4b2 !important; }
 a { color:#8ab4ff !important; }
 a:hover, a:focus { color:#a9c7ff !important; }
 
+/* Login text readability on dark blue background */
+.login-text,
+#login-text,
+.login_text,
+.LoginText,
+[class*="login-text"],
+[id*="login-text"] {
+  color:#dbe9ff !important;
+}
+
 .dropdown-item {
   background:#161a22 !important;
   color:#e6e6e6 !important;
