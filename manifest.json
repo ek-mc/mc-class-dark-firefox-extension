@@ -1,14 +1,16 @@
 {
   "manifest_version": 3,
   "name": "MC-Class Dark Theme (Gecko)",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Applies a dark theme to mc-class.gr",
   "browser_specific_settings": {
     "gecko": {
       "id": "mc-class-dark-theme@ek-mc",
       "strict_min_version": "140.0",
       "data_collection_permissions": {
-        "required": ["none"],
+        "required": [
+          "none"
+        ],
         "optional": []
       }
     },
@@ -22,8 +24,12 @@
         "*://mc-class.gr/*",
         "*://*.mc-class.gr/*"
       ],
-      "css": ["dark.css"],
-      "js": ["content.js"],
+      "css": [
+        "dark.css"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_start"
     }
   ]

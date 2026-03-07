@@ -1,6 +1,9 @@
-# Changelog
-
 ## [Unreleased]
+
+## [0.1.7] - 2026-03-07
+
+### Fixed
+- Improved login text readability on dark blue backgrounds by forcing light text color for login-text selectors.
 
 ## [0.1.7] - 2026-03-04
 
