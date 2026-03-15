@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+### Fixed
+- Improved notification detail readability by overriding hardcoded low-contrast gray (`#515050`) text in dark mode.
+- Added targeted readability override for `ViewNotificationDescr` and nested notification content.
+
 ## [0.1.7] - 2026-03-07
 
 ### Fixed
