@@ -1,5 +1,11 @@
 ## [Unreleased]
 
+## [0.1.10] - 2026-03-15
+
+### Fixed
+- Improved readability for news/notification text areas (`NewsBoxDescr`, `ViewNewDescr`, `ViewNewTitle`, `NewsBoxTitle`).
+- Added dark-theme-safe override for legacy bright green backgrounds (`#7cb742` -> blue-green accent).
+
 ## [0.1.9] - 2026-03-15
 ### Fixed
 - Fixed manifest version placeholder issue; set explicit extension version to 0.1.9.

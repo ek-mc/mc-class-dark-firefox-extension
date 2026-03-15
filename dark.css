@@ -181,6 +181,31 @@ ol {
 
 img, video, canvas, svg { filter:brightness(.92) contrast(1.05); }
 
+/* News/notification readability fixes */
+.NewsBoxDescr,
+.ViewNewDescr p,
+.ViewNewTitle h3,
+.NewsBoxTitle,
+.NewsBoxDescr *,
+.ViewNewDescr *,
+.ViewNewTitle *,
+.NewsBoxTitle * {
+  color: var(--mc-text) !important;
+  opacity: 1 !important;
+}
+
+/* Replace legacy bright-green backgrounds with dark-theme-safe accent */
+[style*="background-color:#7cb742"],
+[style*="background-color: #7cb742"],
+[style*="background:#7cb742"],
+[style*="background: #7cb742"],
+[style*="rgb(124,183,66)"],
+[style*="rgb(124, 183, 66)"] {
+  background-color: #2d6a8a !important;
+  border-color: #3f86ab !important;
+  color: #eaf6ff !important;
+}
+
 /* Global low-contrast rescue for legacy hardcoded gray text on dark backgrounds */
 [style*="#515050"],
 [style*="#515050" i],
