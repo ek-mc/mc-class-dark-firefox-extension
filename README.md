@@ -1,6 +1,5 @@
 # MC-Class Dark Theme (Gecko Extension)
 
-Status: Active | Last release: v0.1.7 | Last update: 2026-03-07 | Live: https://github.com/ek-mc/mc-class-dark-firefox-extension
 
 
 Firefox extension version of the mc-class.gr dark theme.
