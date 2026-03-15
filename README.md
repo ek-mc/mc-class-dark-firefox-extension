@@ -28,9 +28,6 @@ Install directly from Mozilla Add-ons (AMO):
 - `dark.css`
 - `content.js`
 
-## Version
-- 0.1.7
-
 ## License
 
 See [LICENSE](LICENSE).
