@@ -1,4 +1,12 @@
-## [Unreleased]
+# Changelog
+
+## [0.1.11] - 2026-03-21
+
+### Changed
+- Completed lesson icons are now outline-only (no filled background) for:
+  - `.UnitAssets .AssetIconCompleted`
+  - `.Completed .LessonBoxFooterIconCompleted`
+- Updated completed icon color to `rgb(2, 133, 255)` for icon glyphs.
 
 ## [0.1.10] - 2026-03-15
 
@@ -27,7 +35,6 @@
 
 # Changelog
 
-## [Unreleased]
 
 ## [0.1.6] - 2026-03-03
 - Raised Firefox desktop minimum version to `140.0` for compatibility with `data_collection_permissions`.
@@ -58,3 +65,4 @@
 - Added full dark style coverage for mc-class.gr components.
 - Added image placeholder patching for `NoPhoto.jpg` assets.
 - Added Gecko metadata in manifest.
+
