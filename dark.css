@@ -214,19 +214,26 @@ img, video, canvas, svg { filter:brightness(.92) contrast(1.05); }
   color: var(--mc-text) !important;
 }
 
-
-/* Completed lesson icons: blue outline only (no filled background) */
+/* Completed status icons: normalize across all variants (outline-like, muted blue) */
 .UnitAssets .AssetIconCompleted,
-.Completed .LessonBoxFooterIconCompleted {
+.AssetIconCompleted,
+.Completed .LessonBoxFooterIconCompleted,
+.LessonBoxFooterIconCompleted,
+.BoxStatus.Completed {
   background: transparent !important;
   background-color: transparent !important;
   box-shadow: none !important;
-  border: 1px solid rgb(2, 133, 255) !important;
-  border-radius: 999px !important;
+  border: none !important;
 }
 
 .UnitAssets .AssetIconCompleted i,
-.Completed .LessonBoxFooterIconCompleted i {
-  color: rgb(2, 133, 255) !important;
+.AssetIconCompleted i,
+.Completed .LessonBoxFooterIconCompleted i,
+.LessonBoxFooterIconCompleted i,
+.BoxStatus.Completed i,
+i.RDCicon-completed {
+  color: #526d82 !important;
   background: transparent !important;
+  text-shadow: none !important;
 }
+
