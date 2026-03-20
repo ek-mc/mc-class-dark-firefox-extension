@@ -213,3 +213,20 @@ img, video, canvas, svg { filter:brightness(.92) contrast(1.05); }
 [style*="rgb(81, 80, 80)"] {
   color: var(--mc-text) !important;
 }
+
+
+/* Completed lesson icons: blue outline only (no filled background) */
+.UnitAssets .AssetIconCompleted,
+.Completed .LessonBoxFooterIconCompleted {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(2, 133, 255) !important;
+  border-radius: 999px !important;
+}
+
+.UnitAssets .AssetIconCompleted i,
+.Completed .LessonBoxFooterIconCompleted i {
+  color: rgb(2, 133, 255) !important;
+  background: transparent !important;
+}
