@@ -45,5 +45,3 @@ For issues, use [GitHub Issues](https://github.com/ek-mc/mc-class-dark-firefox-e
 This repository uses GitHub Actions workflows:
 - `ci.yml`
 
-## Release cadence
-See [CHANGELOG.md](CHANGELOG.md) for release history.
