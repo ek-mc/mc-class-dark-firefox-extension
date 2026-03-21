@@ -46,4 +46,4 @@ This repository uses GitHub Actions workflows:
 - `ci.yml`
 
 ## Release cadence
-See [RELEASE_POLICY.md](RELEASE_POLICY.md).
+See [CHANGELOG.md](CHANGELOG.md) for release history.
