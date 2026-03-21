@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.12] - 2026-03-21
+
+### Fixed
+- Completed-state icon styling now applies consistently across:
+  - `.LessonBoxFooterIconCompleted`
+  - `.Completed .LessonBoxFooterIconCompleted`
+  - `.BoxStatus.Completed`
+  - `.AssetIconCompleted`
+- Switched completed icon color to muted blue `#526d82` for better dark-theme contrast.
+
+# Changelog
+
 ## [0.1.11] - 2026-03-21
 
 ### Changed
