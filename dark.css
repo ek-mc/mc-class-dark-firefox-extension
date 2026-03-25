@@ -87,6 +87,11 @@ button:hover, .btn:hover { background:#2b3550 !important; }
   border:1px solid #2f3440 !important;
 }
 
+/* Requested tweak: SliderClose border should match panel background */
+.SliderClose {
+  border-color: var(--mc-panel) !important;
+}
+
 /* Notification detail readability (ViewNotificationDescr often has hardcoded low-contrast gray) */
 .ViewNotificationDescr,
 #ViewNotificationDescr,
