@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.13] - 2026-03-25
+
+### Fixed
+- `SliderClose` border now matches panel background (`var(--mc-panel)`) for cleaner dark UI.
+
 ## [0.1.12] - 2026-03-21
 
 ### Fixed
