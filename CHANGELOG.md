@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.14] - 2026-04-02
+
+### Fixed
+- Improved survey readability in dark mode:
+  - `.SectorContainer` now uses the dark panel background instead of white
+  - `.SurveyEkfwnisiText` now uses readable light text
+  - `.MainSurveyHeader.fixed .SurveyHeaderInfo` now stays readable in dark mode
+
 ## [0.1.13] - 2026-03-25
 
 ### Fixed
