@@ -275,3 +275,12 @@ i.RDCicon-completed {
   color: var(--mc-text) !important;
 }
 
+
+
+.InProgress {
+  background-color: #55607A !important;
+}
+
+.LessonBoxFooterIconInProgress i {
+  color: #55607A !important;
+}
