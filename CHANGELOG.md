@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.19] - 2026-05-07
+
+### Changed
+- Applied panel dark background to sidebar for UI consistency:
+  - `.sidebar` now uses `var(--mc-panel)`.
+
 ## [0.1.18] - 2026-05-07
 
 ### Changed
