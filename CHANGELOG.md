@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.24] - 2026-05-08
+
+### Changed
+- Theme balance adjustments:
+  - Restored `--mc-surface` to `#161a22` (undo previous same-as-bg setting).
+  - Set `.main` background to `var(--mc-bg)` for a deeper page canvas while keeping surface contrast.
+  - Header continues to use `var(--mc-panel)` from prior update.
+
 ## [0.1.23] - 2026-05-08
 
 ### Changed
