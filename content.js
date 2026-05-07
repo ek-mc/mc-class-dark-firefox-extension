@@ -17,27 +17,27 @@
     });
   };
 
-  const forceListViewOnce = () => {
-    const input = document.querySelector('#ctl00_cphMain_txtHiddenLessonView');
-    if (!input) return;
+  const forceListViewByClick = () => {
+    const listIcon = document.querySelector('i.LessonView.RDCicon-list');
+    const gridIcon = document.querySelector('i.LessonView.RDCicon-grid-view');
+    if (!listIcon || !gridIcon) return;
 
-    const key = `mc-class-force-list-once:${location.pathname}${location.search}`;
-    if (input.value === '2') {
+    const key = `mc-class-force-list-clicked:${location.pathname}${location.search}`;
+    const gridActive = (gridIcon.className || '').toLowerCase().includes('active');
+    if (!gridActive) {
       sessionStorage.setItem(key, '1');
       return;
     }
-
     if (sessionStorage.getItem(key) === '1') return;
-    if (typeof window.__doPostBack !== 'function') return;
 
-    input.value = '2';
-    window.__doPostBack('ctl00_cphMain_upPanelLessonView', 'update');
+    listIcon.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+    listIcon.click();
     sessionStorage.setItem(key, '1');
   };
 
   const apply = () => {
     patchNoPhoto();
-    forceListViewOnce();
+    forceListViewByClick();
   };
 
   apply();
