@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.27] - 2026-05-08
+
+### Fixed
+- Corrected persisted grid/list view behavior when session flags already exist.
+- View switching now always applies when current view mismatches saved preference.
+- Improved compatibility with `LessonView` icon-based toggles and hidden field state (`txtHiddenLessonView`).
+
+### Behavior
+- Default for first-time users remains list view.
+- Manual choice (grid/list) is remembered and respected on next visits.
+
 ## [0.1.26] - 2026-05-08
 
 ### Added
