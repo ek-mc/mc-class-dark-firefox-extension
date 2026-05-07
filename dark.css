@@ -373,3 +373,15 @@ label.BoxTeacher,
 .StartsInCert {
   background-color: #55607A !important;
 }
+
+h3 {
+  color: var(--mc-text) !important;
+}
+
+.ViewNotificationTitle h3 {
+  color: var(--mc-text) !important;
+}
+
+.ViewNotificationAvatar {
+  background-color: var(--mc-bg) !important;
+}
