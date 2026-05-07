@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.21] - 2026-05-07
+
+### Changed
+- Updated status/survey color alignment for improved dark-mode consistency:
+  - `.badge-danger` background set to `#55607A`.
+  - `.SectorContainer` background set to `var(--mc-bg)`.
+  - `.SurveyNb` background set to `var(--mc-bg)`.
+  - `.StartsInCert` background set to `#2C7A7B`.
+
 ## [0.1.20] - 2026-05-07
 
 ### Changed
