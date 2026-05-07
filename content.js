@@ -19,6 +19,7 @@
 
   const PREF_KEY = 'mc-class-preferred-view';
   const FORCED_KEY = `mc-class-view-applied:${location.pathname}`;
+  const RETRY_KEY = `mc-class-view-retries:${location.pathname}`;
 
   const getCurrentView = () => {
     const input = document.querySelector('#ctl00_cphMain_txtHiddenLessonView');
@@ -68,11 +69,24 @@
     return { list, grid };
   };
 
-  const canTriggerToggle = (el) => {
+  const switchView = (el, value) => {
     if (!el) return false;
-    const onclick = (el.getAttribute('onclick') || '').toLowerCase();
-    if (!onclick.includes('__dopostback')) return true;
-    return typeof window.__doPostBack === 'function';
+
+    const input = document.querySelector('#ctl00_cphMain_txtHiddenLessonView');
+    if (input) input.value = value;
+
+    const onclick = el.getAttribute('onclick') || '';
+    const m = onclick.match(/__doPostBack\('([^']+)'\s*,\s*'([^']*)'\)/);
+
+    if (typeof window.__doPostBack === 'function') {
+      const target = m?.[1] || 'ctl00_cphMain_upPanelLessonView';
+      const arg = m?.[2] || 'update';
+      window.__doPostBack(target, arg);
+      return true;
+    }
+
+    el.click();
+    return true;
   };
 
   const bindPreferenceTracking = () => {
@@ -111,18 +125,26 @@
       return;
     }
 
-    // If view mismatches preference, always try to switch (even if FORCED_KEY was set earlier).
+    const retries = Number(sessionStorage.getItem(RETRY_KEY) || '0');
+
+    // If view mismatches preference, force postback switch.
     if (pref === 'grid') {
-      if (grid && canTriggerToggle(grid)) {
-        grid.click();
+      if (grid && switchView(grid, '1')) {
         sessionStorage.setItem(FORCED_KEY, '1');
+        sessionStorage.setItem(RETRY_KEY, '0');
+        return;
       }
-      return;
+    } else {
+      if (list && switchView(list, '2')) {
+        sessionStorage.setItem(FORCED_KEY, '1');
+        sessionStorage.setItem(RETRY_KEY, '0');
+        return;
+      }
     }
 
-    if (list && canTriggerToggle(list)) {
-      list.click();
-      sessionStorage.setItem(FORCED_KEY, '1');
+    if (retries < 12) {
+      sessionStorage.setItem(RETRY_KEY, String(retries + 1));
+      setTimeout(applyPreferredView, 250);
     }
   };
 
