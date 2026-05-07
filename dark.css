@@ -302,3 +302,13 @@ i.RDCicon-completed {
 .StartsInCert {
   background-color: #2C7A7B !important;
 }
+
+
+.NotificationAvatar.avatar {
+  background-color: var(--mc-bg) !important;
+}
+
+.NotificationTitle,
+NotificationTitle {
+  color: #f0f6fc !important;
+}
