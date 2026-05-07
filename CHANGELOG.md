@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.22] - 2026-05-07
+
+### Changed
+- Updated notification visuals and global dark-theme text tone:
+  - `--mc-text` set to `#f0f6fc` for improved readability.
+  - `.NotificationAvatar.avatar` background set to `var(--mc-bg)`.
+  - `.NotificationTitle` color set to `#f0f6fc`.
+
 ## [0.1.21] - 2026-05-07
 
 ### Changed
