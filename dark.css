@@ -284,3 +284,21 @@ i.RDCicon-completed {
 .LessonBoxFooterIconInProgress i {
   color: #55607A !important;
 }
+
+
+/* Additional dark-theme alignment */
+.badge-danger {
+  background-color: #55607A !important;
+}
+
+.SectorContainer {
+  background: var(--mc-bg) !important;
+}
+
+.SurveyNb {
+  background: var(--mc-bg) !important;
+}
+
+.StartsInCert {
+  background-color: #2C7A7B !important;
+}
