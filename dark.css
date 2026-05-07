@@ -253,7 +253,13 @@ i.RDCicon-completed {
 }
 
 .MainSurveyHeader.fixed .SurveyHeaderInfo {
+  background: var(--mc-bg) !important;
   color: var(--mc-text) !important;
+}
+
+.questionItemLikert:nth-child(2n+1),
+.questionItemLikert:nth-child(2n) {
+  background: var(--mc-bg) !important;
 }
 
 .SurveyNb {

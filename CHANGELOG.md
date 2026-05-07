@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.16] - 2026-05-07
+
+### Fixed
+- Updated survey header info area to use body-dark background for consistent contrast:
+  - `.MainSurveyHeader.fixed .SurveyHeaderInfo` now uses `var(--mc-bg)`.
+- Updated Likert question row backgrounds to dark body tone:
+  - `.questionItemLikert:nth-child(2n+1)` and `.questionItemLikert:nth-child(2n)` now use `var(--mc-bg)`.
+
 ## [0.1.15] - 2026-04-02
 
 ### Fixed
