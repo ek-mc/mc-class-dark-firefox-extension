@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.28] - 2026-05-08
+
+### Fixed
+- Hardened lesson view preference switching on MC-Class icon-based toggles (`LessonView`).
+- View change now sets hidden field (`txtHiddenLessonView`) and triggers `__doPostBack(...)` directly.
+- Added short retry loop to handle delayed page readiness before applying preference.
+
+### Behavior
+- First-time default remains list view.
+- Manual choice (grid/list) is still remembered and respected.
+
 ## [0.1.27] - 2026-05-08
 
 ### Fixed
