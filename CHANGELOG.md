@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.25] - 2026-05-08
+
+### Changed
+- UI readability refinements in lesson cards:
+  - `.card` background set to `var(--mc-bg)`.
+  - `.LessonBoxTitle` color set to `var(--mc-text)`.
+  - `.BoxRoomCode` and `.BoxDurationTime` colors set to `var(--mc-text)`.
+
 ## [0.1.24] - 2026-05-08
 
 ### Changed
