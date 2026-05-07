@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.23] - 2026-05-08
+
+### Changed
+- Refined dark-theme palette and lesson metadata readability:
+  - `--mc-panel` updated to `#0B1220`.
+  - `.StartsInCert` background updated to `#4C51BF`.
+  - `label.BoxTeacher`, `.BoxDates.SameDay`, `.BoxRoomTitle`, `.BoxDurationTitle` now use `var(--mc-text)`.
+
 ## [0.1.22] - 2026-05-07
 
 ### Changed
