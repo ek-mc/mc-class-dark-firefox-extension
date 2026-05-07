@@ -3,7 +3,7 @@
   --mc-bg: #0f1115;
   --mc-surface: #161a22;
   --mc-panel: #141b2d;
-  --mc-text: #f2f6ff;
+  --mc-text: #f0f6fc;
 }
 
 html, body { background:var(--mc-bg) !important; color:var(--mc-text) !important; }
