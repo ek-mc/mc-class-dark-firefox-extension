@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.30] - 2026-05-08
+
+### Changed
+- Updated accordion body hover text color for clearer interactive feedback:
+  - `.AccordionCard-body:hover` now uses `rgb(68, 147, 248)`.
+
 ## [0.1.29] - 2026-05-08
 
 ### Changed
