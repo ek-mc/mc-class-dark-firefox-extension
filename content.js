@@ -17,7 +17,30 @@
     });
   };
 
-  patchNoPhoto();
-  document.addEventListener('DOMContentLoaded', patchNoPhoto);
-  new MutationObserver(patchNoPhoto).observe(document.documentElement, { childList: true, subtree: true });
+  const forceListViewOnce = () => {
+    const input = document.querySelector('#ctl00_cphMain_txtHiddenLessonView');
+    if (!input) return;
+
+    const key = `mc-class-force-list-once:${location.pathname}${location.search}`;
+    if (input.value === '2') {
+      sessionStorage.setItem(key, '1');
+      return;
+    }
+
+    if (sessionStorage.getItem(key) === '1') return;
+    if (typeof window.__doPostBack !== 'function') return;
+
+    input.value = '2';
+    window.__doPostBack('ctl00_cphMain_upPanelLessonView', 'update');
+    sessionStorage.setItem(key, '1');
+  };
+
+  const apply = () => {
+    patchNoPhoto();
+    forceListViewOnce();
+  };
+
+  apply();
+  document.addEventListener('DOMContentLoaded', apply);
+  new MutationObserver(apply).observe(document.documentElement, { childList: true, subtree: true });
 })();
