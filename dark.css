@@ -349,3 +349,16 @@ label.BoxTeacher,
 .BoxDurationTime {
   color: var(--mc-text) !important;
 }
+
+
+.UnitAssets li a,
+.AssetClick {
+  color: var(--mc-text) !important;
+}
+
+.UnitAssets li a:hover,
+.UnitAssets li a:focus,
+.AssetClick:hover,
+.AssetClick:focus {
+  color: rgb(68, 147, 248) !important;
+}
