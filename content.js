@@ -20,22 +20,39 @@
   const PREF_KEY = 'mc-class-preferred-view';
   const FORCED_KEY = `mc-class-view-applied:${location.pathname}`;
 
+  const getCurrentView = () => {
+    const input = document.querySelector('#ctl00_cphMain_txtHiddenLessonView');
+    const val = (input && input.value || '').trim();
+    if (val === '2') return 'list';
+    if (val === '1') return 'grid';
+    return null;
+  };
+
   const getViewToggles = () => {
-    const candidates = Array.from(document.querySelectorAll('button, a, [role="button"], [class*="view" i], [id*="view" i]'));
+    const candidates = Array.from(document.querySelectorAll('button, a, i, [role="button"], [class*="view" i], [id*="view" i], [title*="view" i]'));
     let list = null;
     let grid = null;
 
     for (const el of candidates) {
       const idClass = `${el.id || ''} ${el.className || ''}`.toLowerCase();
       const text = (el.textContent || '').trim().toLowerCase();
+      const title = (el.getAttribute('title') || '').trim().toLowerCase();
+      const onclick = (el.getAttribute('onclick') || '').toLowerCase();
+
       const hasListHint =
-        /(^|[^a-z])(list|λίστα)([^a-z]|$)/i.test(text) ||
+        /(^|[^a-z])(list|λίστα|listview)([^a-z]|$)/i.test(`${text} ${title}`) ||
         idClass.includes('list') ||
-        el.querySelector('.fa-list, .fa-list-ul, .bi-list, [class*="list" i]');
+        onclick.includes("val('2')") ||
+        onclick.includes('val("2")') ||
+        !!el.querySelector?.('.fa-list, .fa-list-ul, .bi-list, [class*="list" i]');
+
       const hasGridHint =
-        /(^|[^a-z])(grid|πλέγμα)([^a-z]|$)/i.test(text) ||
+        /(^|[^a-z])(grid|πλέγμα|gridview)([^a-z]|$)/i.test(`${text} ${title}`) ||
         idClass.includes('grid') ||
-        el.querySelector('.fa-th, .fa-th-large, .bi-grid, [class*="grid" i]');
+        onclick.includes("val('1')") ||
+        onclick.includes('val("1")') ||
+        !!el.querySelector?.('.fa-th, .fa-th-large, .bi-grid, [class*="grid" i]');
+
       const isHidden = el.offsetParent === null;
       if (isHidden) continue;
       if (!list && hasListHint) list = el;
@@ -44,12 +61,6 @@
     }
 
     return { list, grid };
-  };
-
-  const isActive = (el) => {
-    if (!el) return false;
-    const cls = `${el.className || ''}`.toLowerCase();
-    return el.getAttribute('aria-pressed') === 'true' || cls.includes('active') || cls.includes('selected');
   };
 
   const bindPreferenceTracking = () => {
@@ -80,15 +91,21 @@
       if (!localStorage.getItem(PREF_KEY)) localStorage.setItem(PREF_KEY, pref);
     } catch {}
 
-    if (sessionStorage.getItem(FORCED_KEY) === '1') return;
-
-    if (pref === 'grid') {
-      if (grid && !isActive(grid)) grid.click();
+    const current = getCurrentView();
+    if (current === pref) {
       sessionStorage.setItem(FORCED_KEY, '1');
       return;
     }
 
-    if (list && !isActive(list)) list.click();
+    if (sessionStorage.getItem(FORCED_KEY) === '1') return;
+
+    if (pref === 'grid') {
+      if (grid) grid.click();
+      sessionStorage.setItem(FORCED_KEY, '1');
+      return;
+    }
+
+    if (list) list.click();
     sessionStorage.setItem(FORCED_KEY, '1');
   };
 
