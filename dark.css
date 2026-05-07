@@ -262,6 +262,10 @@ i.RDCicon-completed {
   background: var(--mc-bg) !important;
 }
 
+.help_desk_toggle {
+  background: var(--mc-bg) !important;
+}
+
 .SurveyNb {
   background: var(--mc-panel) !important;
   color: var(--mc-text) !important;

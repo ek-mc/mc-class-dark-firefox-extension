@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.17] - 2026-05-07
+
+### Fixed
+- Darkened Help Desk toggle area for better dark-mode consistency:
+  - `.help_desk_toggle` now uses `var(--mc-bg)`.
+
 ## [0.1.16] - 2026-05-07
 
 ### Fixed
