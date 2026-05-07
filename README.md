@@ -1,6 +1,6 @@
 # MC-Class Dark Theme (Gecko Extension)
 
-![Version](https://img.shields.io/badge/version-0.1.19-2563eb)
+![Version](https://img.shields.io/badge/version-0.1.20-2563eb)
 ![Platform](https://img.shields.io/badge/platform-Firefox-1f2937)
 
 Firefox/Gecko extension version of the `mc-class.gr` dark theme.
