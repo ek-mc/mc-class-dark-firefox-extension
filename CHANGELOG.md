@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.32] - 2026-05-08
+
+### Changed
+- Refined sidebar icon alignment after size reduction:
+  - `.sidebar .nav-link i` now uses `inline-flex` centering.
+  - Width adjusted to `18px` and spacing tightened (`margin-right: 0.55rem`).
+  - Added `line-height: 1` for cleaner vertical alignment.
+
 ## [0.1.31] - 2026-05-08
 
 ### Changed
