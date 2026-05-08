@@ -386,12 +386,15 @@ h3 {
 
 
 .sidebar .nav-link i {
-  width: 20px !important;
-  margin: 0 0.8rem 0 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 18px !important;
+  margin: 0 0.55rem 0 0 !important;
   font-size: 14px !important;
+  line-height: 1 !important;
   color: #fff !important;
 }
-
 footer {
   background: var(--mc-bg) !important;
 }
