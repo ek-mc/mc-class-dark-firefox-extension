@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.31] - 2026-05-08
+
+### Changed
+- Updated completed-state icon color:
+  - `i.RDCicon-completed` now uses `#059669`.
+- Updated footer background tone:
+  - `footer` now uses `var(--mc-bg)`.
+
 ## [0.1.30] - 2026-05-08
 
 ### Changed
