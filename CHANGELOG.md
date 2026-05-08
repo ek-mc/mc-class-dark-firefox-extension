@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.33] - 2026-05-09
+
+### Fixed
+- Sidebar minimized mode now shows icons only:
+  - Hides `.menu-text` labels in minimized state (`>=992px`).
+  - Centers `.menu-icon` in nav links to remove tiny text overlap artifacts.
+
+### Changed
+- Updated panel tone for a softer layered look:
+  - `--mc-panel` set to `rgba(255, 255, 255, 0.05)`.
+
 ## [0.1.32] - 2026-05-08
 
 ### Changed
