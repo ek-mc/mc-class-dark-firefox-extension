@@ -241,7 +241,7 @@ img, video, canvas, svg { filter:brightness(.92) contrast(1.05); }
 .LessonBoxFooterIconCompleted i,
 .BoxStatus.Completed i,
 i.RDCicon-completed {
-  color: #526d82 !important;
+  color: #059669 !important;
 }
 
 /* Survey readability fixes */
@@ -390,4 +390,8 @@ h3 {
   margin: 0 0.8rem 0 0 !important;
   font-size: 14px !important;
   color: #fff !important;
+}
+
+footer {
+  background: var(--mc-bg) !important;
 }
