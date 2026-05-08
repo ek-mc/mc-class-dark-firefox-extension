@@ -163,6 +163,35 @@ ol {
     overflow: hidden !important;
     white-space: nowrap !important;
   }
+
+  /* Show label on hover in minimized sidebar */
+  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item,
+  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link {
+    position: relative !important;
+  }
+
+  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover .menu-text,
+  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:focus .menu-text,
+  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item:hover > .nav-link .menu-text,
+  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item:focus-within > .nav-link .menu-text {
+    display: inline-block !important;
+    width: auto !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    left: calc(100% + 8px) !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: var(--mc-panel) !important;
+    color: var(--mc-text) !important;
+    border: 1px solid #2f3440 !important;
+    border-radius: 8px !important;
+    padding: 6px 10px !important;
+    z-index: 9999 !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+    pointer-events: none !important;
+  }
 }
 
 .AccordionCard-body,
