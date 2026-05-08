@@ -86,7 +86,10 @@ button:hover, .btn:hover { background:#2b3550 !important; }
 .timeLineBody,
 .BoxAbsencesInfo,
 .BoxAbsencesTable,
-.help_desk_side {
+.help_desk_side,
+.sidebar-minimizer,
+.brand-minimizer {
+
   background:var(--mc-panel) !important;
   color:var(--mc-text) !important;
   border:1px solid #2f3440 !important;
