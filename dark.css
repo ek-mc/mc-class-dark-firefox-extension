@@ -139,6 +139,11 @@ ol {
   border-color:#2f3440 !important;
 }
 
+.menu-text,
+span.menu-text {
+  color: var(--mc-text) !important;
+}
+
 /* Sidebar minimized fix: keep only icon, hide tiny label text */
 @media (min-width: 992px) {
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link {
