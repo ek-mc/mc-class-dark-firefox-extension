@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.35] - 2026-05-09
+
+### Changed
+- Minimized sidebar polish update:
+  - Hover state now uses a rounded gray icon card while keeping icon position stable.
+  - Added right border on `.sidebar` (`1px solid #2f3440`) for clearer separation.
+  - Set `--mc-panel` to `#010400`.
+  - Forced `.menu-text` color to `var(--mc-text)` for consistent readability.
+
 ## [0.1.34] - 2026-05-09
 
 ### Changed
