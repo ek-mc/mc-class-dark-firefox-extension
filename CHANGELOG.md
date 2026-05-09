@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.39] - 2026-05-09
+
+### Changed
+- Recolored default `man.svg` avatar instances to match theme-muted tone `#9198A9`.
+
 ## [0.1.38] - 2026-05-09
 
 ### Fixed
