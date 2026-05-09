@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.40] - 2026-05-09
+
+### Changed
+- `.DropItems` padding set to `6px 8px`.
+- `.table` background set to `var(--mc-panel)`.
+- `.help_desk_toggle` now has right border: `1px solid #2f3440`.
+- Reverted `man.svg` avatar recolor override to original behavior.
+- Minimized sidebar hover now stays icon-only (removed floating labels on the right).
+
 ## [0.1.39] - 2026-05-09
 
 ### Changed
