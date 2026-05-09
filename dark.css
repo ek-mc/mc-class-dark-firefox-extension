@@ -430,14 +430,6 @@ label.BoxTeacher,
 }
 
 
-.ulAssets li > a:hover,
-.ulAssets li > a:hover div,
-.ulAssets li > a:hover span,
-.ulAssets li > a:hover label {
-  color: rgb(68, 147, 248) !important;
-}
-
-
 .BoxAbsencesInfoLesson,
 .BoxAbsencesInfoTeacher,
 .BoxAbsencesInfoClass {
