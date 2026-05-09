@@ -215,7 +215,7 @@ span.menu-text {
     white-space: nowrap !important;
   }
 
-  /* Show label on hover in minimized sidebar (icon stays put) */
+  /* Minimized sidebar: icon-only hover (no floating labels) */
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item,
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link {
     position: relative !important;
@@ -247,32 +247,6 @@ span.menu-text {
     margin: 0 !important;
   }
 
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover .menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:focus .menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover span.menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:focus span.menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item:hover > .nav-link .menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item:focus-within > .nav-link .menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item:hover > .nav-link span.menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item:focus-within > .nav-link span.menu-text {
-    display: inline-block !important;
-    width: auto !important;
-    opacity: 1 !important;
-    overflow: visible !important;
-    white-space: nowrap !important;
-    position: absolute !important;
-    left: calc(100% + 10px) !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    background: color-mix(in srgb, var(--mc-panel) 88%, white 12%) !important;
-    color: var(--mc-text) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 10px !important;
-    padding: 6px 10px !important;
-    z-index: 9999 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22) !important;
-    pointer-events: none !important;
-  }
 }
 
 .AccordionCard-body,
