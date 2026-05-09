@@ -69,6 +69,10 @@ a:hover, a:focus { color:#a9c7ff !important; }
   color:#ffffff !important;
 }
 
+.DropItems {
+  padding: 6px 8px !important;
+}
+
 /* Keep dropdown icons centered in their own fixed slot */
 .dropdown-item > .fa,
 .dropdown-item > [class*=" fa-"],
@@ -325,12 +329,6 @@ span.menu-text {
 
 img, video, canvas, svg { filter:brightness(.92) contrast(1.05); }
 
-
-/* Recolor default man avatar to theme-muted tone */
-img[src$="/assetsClever/img/avatars/man.svg"],
-img[src*="/assetsClever/img/avatars/man.svg?"] {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%239198A9'/%3E%3Cpath fill='%23010400' d='M64 68c13.255 0 24-12.536 24-28S77.255 12 64 12 40 24.536 40 40s10.745 28 24 28zm0 8c-19.882 0-36 12.536-36 28v12h72v-12c0-15.464-16.118-28-36-28z'/%3E%3C/svg%3E") !important;
-}
 
 
 /* News/notification readability fixes */
