@@ -51,11 +51,19 @@ a:hover, a:focus { color:#a9c7ff !important; }
 .dropdown-item {
   background:var(--mc-panel) !important;
   color:#e6e6e6 !important;
+  border: 0 !important;
+  padding: 6px 8px !important;
 }
 .dropdown-item:hover, .dropdown-item:focus,
 .dropdown-item.active, .dropdown-item:active {
   background:#2b3550 !important;
   color:#ffffff !important;
+}
+
+.dropdown-header {
+  text-align: left !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
 }
 
 button, .btn {
