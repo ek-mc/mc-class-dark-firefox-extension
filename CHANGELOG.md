@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.41] - 2026-05-09
+
+### Changed
+- `.DropItems` keeps `padding: 6px 8px` and now uses `background: var(--mc-panel)`.
+- Restored sidebar to original upstream layout/behavior.
+- Sidebar visual theme remains dark: background `var(--mc-panel)` and icon/text color `var(--mc-text)`.
+
 ## [0.1.40] - 2026-05-09
 
 ### Changed
