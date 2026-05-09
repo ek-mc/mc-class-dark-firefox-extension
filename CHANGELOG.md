@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.36] - 2026-05-09
+
+### Changed
+- Dropdown polish update:
+  - `.dropdown-item` background uses `var(--mc-panel)`.
+  - `.dropdown-item` border removed and spacing tightened (`padding: 6px 8px`).
+  - `.dropdown-header` is now left-aligned with matching horizontal padding.
+
 ## [0.1.35] - 2026-05-09
 
 ### Changed
