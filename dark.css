@@ -253,6 +253,15 @@ img, video, canvas, svg { filter:brightness(.92) contrast(1.05); }
 
 
 
+
+.BoxNotificationTopText a,
+.BoxNotificationTopText a:link,
+.BoxNotificationTopText a:visited,
+.BoxNotificationTopText a:hover,
+.BoxNotificationTopText a:focus {
+  color: var(--mc-text) !important;
+}
+
 /* News/notification readability fixes */
 .NewsBoxDescr,
 .ViewNewDescr p,
