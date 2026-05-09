@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.38] - 2026-05-09
+
+### Fixed
+- Restored minimized-sidebar icon centering and hover behavior:
+  - Centered minimized `.nav-item` and icon slot.
+  - Fixed hover label trigger to work when hovering icon area, not only text.
+- Survey containers now consistently use `var(--mc-panel)` to remove mismatched extra dark layer.
+
 ## [0.1.37] - 2026-05-09
 
 ### Changed
