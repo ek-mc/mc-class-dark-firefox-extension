@@ -49,7 +49,7 @@ a:hover, a:focus { color:#a9c7ff !important; }
 }
 
 .dropdown-item {
-  background:#161a22 !important;
+  background:var(--mc-panel) !important;
   color:#e6e6e6 !important;
 }
 .dropdown-item:hover, .dropdown-item:focus,
