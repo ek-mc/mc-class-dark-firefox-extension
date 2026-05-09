@@ -38,6 +38,11 @@ input::placeholder, textarea::placeholder { color:#9aa4b2 !important; }
 a { color:#8ab4ff !important; }
 a:hover, a:focus { color:#a9c7ff !important; }
 
+.nav-link,
+.nav-link a {
+  color:#9198A9 !important;
+}
+
 /* Login text readability on dark blue background */
 .login-text,
 #login-text,
@@ -58,6 +63,17 @@ a:hover, a:focus { color:#a9c7ff !important; }
 .dropdown-item.active, .dropdown-item:active {
   background:#2b3550 !important;
   color:#ffffff !important;
+}
+
+/* Keep dropdown icons centered in their own fixed slot */
+.dropdown-item > .fa,
+.dropdown-item > [class*=" fa-"],
+.dropdown-item > [class^="fa-"] {
+  display: inline-block !important;
+  width: 1.25em !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  margin-right: .5rem !important;
 }
 
 .dropdown-header {
