@@ -195,8 +195,8 @@ span.menu-text {
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover,
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:focus,
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item.active > .nav-link {
-    background: #2b313d !important;
-    border-color: #3a4250 !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-color: rgba(255, 255, 255, 0.10) !important;
   }
 
   .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover .menu-icon,
@@ -219,13 +219,13 @@ span.menu-text {
     left: calc(100% + 10px) !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    background: var(--mc-panel) !important;
+    background: color-mix(in srgb, var(--mc-panel) 88%, white 12%) !important;
     color: var(--mc-text) !important;
-    border: 1px solid #3a4250 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
     border-radius: 10px !important;
-    padding: 7px 11px !important;
+    padding: 6px 10px !important;
     z-index: 9999 !important;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22) !important;
     pointer-events: none !important;
   }
 }
