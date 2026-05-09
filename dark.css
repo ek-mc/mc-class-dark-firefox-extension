@@ -180,73 +180,21 @@ span.menu-text {
   color: var(--mc-text) !important;
 }
 
-/* Sidebar minimized fix: keep only icon, hide tiny label text */
-@media (min-width: 992px) {
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item {
-    display: flex !important;
-    justify-content: center !important;
-  }
 
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+/* Sidebar: keep original layout, only theme colors */
+.sidebar,
+.sidebar .sidebar-nav,
+.sidebar .nav,
+.sidebar .nav-item,
+.sidebar .nav-link {
+  background: var(--mc-panel) !important;
+}
 
-  .sidebar-minimized .sidebar .sidebar-nav .nav .menu-icon,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link i {
-    margin: 0 !important;
-    font-size: 18px !important;
-    line-height: 1 !important;
-    min-width: 18px !important;
-    width: 18px !important;
-    text-align: center !important;
-  }
-
-  .sidebar-minimized .sidebar .sidebar-nav .nav .menu-text,
-  .sidebar-minimized .sidebar .sidebar-nav .nav span.menu-text {
-    display: none !important;
-    width: 0 !important;
-    opacity: 0 !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-  }
-
-  /* Minimized sidebar: icon-only hover (no floating labels) */
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link {
-    position: relative !important;
-  }
-
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 36px !important;
-    height: 36px !important;
-    margin: 4px auto !important;
-    border-radius: 10px !important;
-    border: 0 !important;
-    box-sizing: border-box !important;
-  }
-
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:focus,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item.active > .nav-link {
-    background: rgba(255, 255, 255, 0.06) !important;
-    border: 0 !important;
-  }
-
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:hover .menu-icon,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-link:focus .menu-icon,
-  .sidebar-minimized .sidebar .sidebar-nav .nav .nav-item.active > .nav-link .menu-icon {
-    transform: none !important;
-    margin: 0 !important;
-  }
-
+.sidebar .nav-link,
+.sidebar .nav-link i,
+.sidebar .menu-text,
+.sidebar span.menu-text {
+  color: var(--mc-text) !important;
 }
 
 .AccordionCard-body,
@@ -501,17 +449,6 @@ h3 {
   color: rgb(68, 147, 248) !important;
 }
 
-
-.sidebar .nav-link i {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 18px !important;
-  margin: 0 0.55rem 0 0 !important;
-  font-size: 14px !important;
-  line-height: 1 !important;
-  color: #fff !important;
-}
 footer {
   background: var(--mc-bg) !important;
 }
