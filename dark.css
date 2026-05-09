@@ -78,8 +78,8 @@ a:hover, a:focus { color:#a9c7ff !important; }
 
 .dropdown-header {
   text-align: left !important;
-  padding-left: 6px !important;
-  padding-right: 6px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 button, .btn {
