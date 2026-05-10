@@ -39,7 +39,7 @@ input, textarea, select {
 }
 input::placeholder, textarea::placeholder { color:#9aa4b2 !important; }
 
-a { color:#8ab4ff !important; }
+a { color:var(--mc-text) !important; }
 a:hover, a:focus { color:#a9c7ff !important; }
 
 .nav-link,
