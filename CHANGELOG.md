@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.43] - 2026-05-10
+
+### Changed
+- Set default link color (`a`) to `var(--mc-text)` while keeping existing hover color behavior.
+- Added sidebar navigation hover/focus background: `#161a22` (`.sidebar .nav-item/.nav-link`).
+- Center-aligned `.dropdown-header` text.
+- Added hover/focus accent color for `.ulAssets` to `rgb(68, 147, 248)`.
+
 ## [0.1.42] - 2026-05-09
 
 ### Fixed
