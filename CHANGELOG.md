@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.46] - 2026-05-12
+
+### Changed
+- Updated `.ulAssets` hover/focus text-color rule to target only the lesson text block:
+  - `.ulAssets li a:hover .FooterIconsStart > div:not(.AssetIcon)`
+  - `.ulAssets li a:focus .FooterIconsStart > div:not(.AssetIcon)`
+- Added `background: var(--mc-panel)` to `#ctl00_CleverRightMenu1_upPanelRightMenu`.
+- Added `padding: 6px 8px 6px 8px` and `background: var(--mc-panel)` to `#ctl00_lnkbtnLogout`.
+
 ## [0.1.45] - 2026-05-12
 
 ### Changed

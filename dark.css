@@ -76,6 +76,12 @@ a:hover, a:focus { color:#a9c7ff !important; }
 
 #ctl00_CleverRightMenu1_upPanelRightMenu {
   padding: 6px 8px 6px 8px !important;
+  background: var(--mc-panel) !important;
+}
+
+#ctl00_lnkbtnLogout {
+  padding: 6px 8px 6px 8px !important;
+  background: var(--mc-panel) !important;
 }
 
 /* Keep dropdown icons centered in their own fixed slot */
@@ -448,8 +454,8 @@ label.BoxTeacher,
   color: rgb(68, 147, 248) !important;
 }
 
-.ulAssets li a:hover,
-.ulAssets li a:focus {
+.ulAssets li a:hover .FooterIconsStart > div:not(.AssetIcon),
+.ulAssets li a:focus .FooterIconsStart > div:not(.AssetIcon) {
   color: rgb(68, 147, 248) !important;
 }
 
