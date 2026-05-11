@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.44] - 2026-05-11
+
+### Changed
+- Matched exam-like sidebar interaction style for nav entries:
+  - `.nav-item:hover`, `.nav-item:focus`, `.nav-item.active`, `.nav-item:active`
+  - mirrored on `.nav-link` states for consistency.
+- Nav hover/active background now uses `#2b3550` with white foreground text.
+- Kept `.dropdown-header` center-aligned.
+- Added explicit hover/focus color for `.ulAssets li a` to `rgb(68, 147, 248)`.
+
 ## [0.1.43] - 2026-05-10
 
 ### Changed
