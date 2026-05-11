@@ -74,6 +74,10 @@ a:hover, a:focus { color:#a9c7ff !important; }
   background: var(--mc-panel) !important;
 }
 
+#ctl00_CleverRightMenu1_upPanelRightMenu {
+  padding: 6px 8px 6px 8px !important;
+}
+
 /* Keep dropdown icons centered in their own fixed slot */
 .dropdown-item > .fa,
 .dropdown-item > [class*=" fa-"],

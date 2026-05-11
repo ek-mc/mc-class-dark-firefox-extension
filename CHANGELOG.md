@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.45] - 2026-05-12
+
+### Changed
+- Added `padding: 6px 8px 6px 8px` to `#ctl00_CleverRightMenu1_upPanelRightMenu`.
+
 ## [0.1.44] - 2026-05-11
 
 ### Changed
