@@ -6,7 +6,25 @@
   --mc-text: #f0f6fc;
 }
 
-html, body { background:var(--mc-bg) !important; color:var(--mc-text) !important; }
+html, body {
+  background:var(--mc-bg) !important;
+  color:#e6edf3 !important;
+  font-weight:450 !important;
+  line-height:1.62 !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p, span, li, td, th, label, div, small {
+  color:#e6edf3 !important;
+  font-weight:450 !important;
+}
+
+.text-muted, .muted, .secondary, .help-text, .meta, .subtitle,
+small, .form-text, .text-secondary {
+  color:#b6c2cf !important;
+  font-weight:400 !important;
+}
 
 body *, body *::before, body *::after { border-color:#2f3440 !important; }
 
@@ -37,10 +55,21 @@ tr:nth-child(even), .muted, .bg-light, .light, .well {
 input, textarea, select {
   border:1px solid #2f3440 !important;
 }
-input::placeholder, textarea::placeholder { color:#9aa4b2 !important; }
+input::placeholder, textarea::placeholder { color:#9fb0c0 !important; opacity:1 !important; }
 
-a { color:var(--mc-text) !important; }
-a:hover, a:focus { color:#a9c7ff !important; }
+a { color:#8ab4ff !important; font-weight:500 !important; }
+a:hover, a:focus { color:#b3ceff !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  color:#f0f6fc !important;
+  font-weight:600 !important;
+  letter-spacing:0.01em;
+}
+
+input, textarea, select, button {
+  color:#e6edf3 !important;
+  font-weight:450 !important;
+}
 
 .nav-link,
 .nav-link a {
