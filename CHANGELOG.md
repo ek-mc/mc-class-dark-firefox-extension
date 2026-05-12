@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.47] - 2026-05-12
+
+### Changed
+- Improved global readability in dark mode:
+  - Increased base text legibility with stronger text color (`#e6edf3`) and weight (`450`).
+  - Added readable muted-text tone (`#b6c2cf`).
+  - Raised placeholder contrast (`#9fb0c0`).
+  - Updated link styling to clearer blue states (`#8ab4ff` / `#b3ceff`) without underline injection.
+  - Added consistent heading hierarchy (`font-weight: 600`) and improved text rendering.
+
 ## [0.1.46] - 2026-05-12
 
 ### Changed
